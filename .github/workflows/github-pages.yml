@@ -1,3 +1,4 @@
+---
 name: Build and Deploy React App to Github Pages
 on:
   push:
