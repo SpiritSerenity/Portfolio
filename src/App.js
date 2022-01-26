@@ -1,5 +1,4 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 
 function App() {
   // this can be used with rgba and hex value ontop of pre defined colors.
