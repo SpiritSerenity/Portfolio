@@ -2,8 +2,9 @@ import React from 'react';
 
 export default function TodoList() 
 {
-  return 
+  return (
   <div>
       Hello World
-  </div>;
+  </div>
+  )
 }
