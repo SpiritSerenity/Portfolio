@@ -1,8 +1,4 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  // this can be used with rgba and hex value ontop of pre defined colors.
+// this can be used with rgba and hex value ontop of pre defined colors.
 const colors = ["green", "red", "yellow", "orange", "blue", "purple", "pink"];
 const btn = document.getElementById('btn');
 const color = document.querySelector(".color");
@@ -23,6 +19,3 @@ function getRandomNumber()
 {
     return Math.floor(Math.random() * colors.length);
 }
-}
-
-export default App;
