@@ -1,6 +1,9 @@
 import React, { useState, useRef, useEffect} from 'react';
+import'./App.css';
 import TodoList from './TodoList';
 import { v4 as uuidv4 } from 'uuid';
+import Button from '@material-ui/core/Button'
+import TextField from '@material-ui/core/TextField'
 
 const LOCAL_STORAGE_KEY = 'todoApp.todoArray'
 
@@ -44,8 +47,8 @@ function App(){
     <>
     <TodoList todoArray={todos} toggleTodo={toggleTodo} />
     <input ref ={ todoNameRef }type = "text"/>
-    <button onClick={handleAddTodo}>Add Todo</button>
-    <button onClick = {handleClearTodos}>Clear Completed</button>
+    <Button onClick={handleAddTodo} variant ='contained' color = "secondary" >Add Todo</Button>
+    <Button onClick = {handleClearTodos} variant ='contained' color = "secondary">Clear Completed</Button>
     <div>{todos.filter(todo => !todo.complete).length}</div>
     </>
  )  
